@@ -4,6 +4,7 @@ import parse from 'html-react-parser';
 export default function Episodes(props) {
   return (
     <div className="episodes">
+      {console.log('here are the episodes:', props.episodes)}
       {props.episodes.map(e => (
         <div className="episode" key={e.id}>
           {e.image && (
